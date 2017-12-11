@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :books
   resources :reading_lists
   root 'home#home'
   get 'contact', to: 'home#contact'
