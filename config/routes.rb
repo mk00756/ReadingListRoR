@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
+  # Resource paths
   resources :books
   resources :reading_lists
+  # Homepage path
   root 'home#home'
+  # Contact path
   get 'contact', to: 'home#contact'
   post 'request_contact', to: 'home#request_contact'
   # The priority is based upon order of creation: first created -> highest priority.
