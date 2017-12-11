@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @reading_list.title
+%p
+  %b Description:
+  = @reading_list.description
+
+= link_to 'Edit', edit_reading_list_path(@reading_list)
+\|
+= link_to 'Back', reading_lists_path

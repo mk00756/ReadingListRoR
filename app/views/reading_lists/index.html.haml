@@ -1,0 +1,23 @@
+%h1 Listing reading_lists
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Description
+      %th
+      %th
+      %th
+
+  %tbody
+    - @reading_lists.each do |reading_list|
+      %tr
+        %td= reading_list.title
+        %td= reading_list.description
+        %td= link_to 'Show', reading_list
+        %td= link_to 'Edit', edit_reading_list_path(reading_list)
+        %td= link_to 'Destroy', reading_list, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Reading list', new_reading_list_path
