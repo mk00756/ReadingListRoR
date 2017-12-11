@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  user: one
   title: ReadList1
   description: MyString1
 
 two:
+  user: two
   title: ReadList2
   description: MyString2

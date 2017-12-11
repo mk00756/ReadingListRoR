@@ -1,9 +1,12 @@
 require 'test_helper'
 
 class BooksControllerTest < ActionController::TestCase
+  include Devise::TestHelpers
   setup do
     @book = books(:one)
     @reading_list = reading_lists(:one)
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do
