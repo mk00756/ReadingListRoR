@@ -27,3 +27,20 @@ en:
     home:
       title: My Reading Lists
       description: Here are your reading lists.
+    
+    contact:
+      title: Contact Us
+      contact_us: Just fill out the form and we will get back to you.
+      name: "Name:"
+      enter_name: Enter your name
+      email: "Email:"
+      enter_email: Enter your email
+      telephone: "Telephone:"
+      enter_telephone: Enter your telephone number
+      message: "Message:"
+      enter_message: Enter your message
+      submit: Contact Us
+    
+    request_contact:
+      no_email: You must enter your email address
+      email_sent: Your message has been sent.
