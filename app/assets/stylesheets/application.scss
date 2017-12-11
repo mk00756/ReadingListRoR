@@ -15,3 +15,17 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$font: 'Arial';
+$color: #8cb8ff;
+
+body {
+    font-family: $font;
+    background-color: $color;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-transform: uppercase;
+}

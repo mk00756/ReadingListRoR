@@ -22,3 +22,8 @@
 en:
   app_title: Reading Lists
   app_description: A place to store your reading lists.
+  
+  home:
+    home:
+      title: My Reading Lists
+      description: Here are your reading lists.
