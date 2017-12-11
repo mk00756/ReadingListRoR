@@ -1,6 +1,7 @@
 class ReadingListsController < ApplicationController
   before_action :set_reading_list, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  
   # GET /reading_lists
   # GET /reading_lists.json
   def index
