@@ -5,7 +5,7 @@ class ReadingListsController < ApplicationController
   # GET /reading_lists
   # GET /reading_lists.json
   def index
-    @reading_lists = ReadingList.all
+    @reading_lists = ReadingList.user_reading_lists(current_user)
   end
 
   # GET /reading_lists/1
@@ -26,6 +26,7 @@ class ReadingListsController < ApplicationController
   # POST /reading_lists.json
   def create
     @reading_list = ReadingList.new(reading_list_params)
+    @reading_list.user = current_user
 
     respond_to do |format|
       if @reading_list.save
